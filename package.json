@@ -1,0 +1,51 @@
+{
+  "name": "autometer",
+  "version": "0.1.0",
+  "description": "Distributed load testing made simple",
+  "author": "Autometer Team",
+  "bin": {
+    "autometer": "main.js"
+  },
+  "main": "main.js",
+  "files": [
+    "main.js",
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/intuit/autometer"
+  },
+  "bugs": {
+    "url": "https://github.com/intuit/autometer/issues"
+  },
+  "keywords": [
+    "load testing",
+    "performance testing",
+    "distributed",
+    "jmeter",
+    "docker"
+  ],
+  "dependencies": {
+    "yargs": "~10.0.3",
+    "shelljs": "~0.5.3",
+    "winston": "~2.4.0"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "coveralls": "^2.11.11",
+    "mocha": "^3.0.1",
+    "nyc": "^11.2.1",
+    "standard": "^8.6.0"
+  },
+  "scripts": {
+    "pretest": "npm install",
+    "posttest": "standard --fix",
+    "test": "nyc --reporter=text mocha --timeout=8000 --check-leaks",
+    "predeploy": "npm test",
+    "deploy": "npm install -g ."
+  },
+  "license": "MIT",
+  "engine": {
+    "node": ">=7"
+  }
+}
