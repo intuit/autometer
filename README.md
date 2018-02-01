@@ -45,6 +45,8 @@ $ autometer --help
 
 Getting Started
 --------------
+<img width=700px src="/docs/autometer-diagram.png">
+
 
 #### Docker images setup:
  * Make sure you can access [docker hub](https://hub.docker.com). 
