@@ -1,4 +1,4 @@
-Autometer
+AutoMeter
 =========
 
 [![Build Status][travis-image]][travis-url]
